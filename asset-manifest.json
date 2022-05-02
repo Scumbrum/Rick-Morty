@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/Rick-Morty/static/css/main.31d6cfe0.css",
-    "main.js": "/Rick-Morty/static/js/main.d21d9337.js",
+    "main.js": "/Rick-Morty/static/js/main.b861d110.js",
     "index.html": "/Rick-Morty/index.html",
-    "main.d21d9337.js.map": "/Rick-Morty/static/js/main.d21d9337.js.map"
+    "main.b861d110.js.map": "/Rick-Morty/static/js/main.b861d110.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.d21d9337.js"
+    "static/js/main.b861d110.js"
   ]
 }
