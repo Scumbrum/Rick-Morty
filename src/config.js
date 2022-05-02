@@ -1,5 +1,0 @@
-export const CLIENT_ID = "789jd4u6k06nv1"
-export const CLIENT_SECRET = "CejT9z9ApcXbbF1k"
-export const CURRENT_URI = "http%3A%2F%2Flocalhost%3A3000"
-export const STATE = "999"
-export const AUTH_URL = "https://www.linkedin.com/oauth/v2/authorization"
