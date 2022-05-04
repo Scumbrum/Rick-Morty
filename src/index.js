@@ -2,40 +2,31 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import {ApolloProvider, ApolloClient, InMemoryCache, ApolloConsumer} from "@apollo/client"
-import { getAllCharacters} from './queries/apollo';
+import { STATE } from './config';
+import { sendMessage } from './utils';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+sendMessage()
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
 
 const cache = new InMemoryCache(
   {
     typePolicies: {
-      Characters: {
-        keyFields: ["results"],
-        fields: {
-          resuls: {
-            keyArgs:false,
-            merge(existing = [], incoming) {
-              return [...existing, ...incoming];
-            },
-          }
-        }
+      Caracter: {
+        keyFields: ["id"]
       }
     }
   }
 )
-
 
 const client = new ApolloClient({
   uri: "https://rickandmortyapi.com/graphql",
   cache: cache
 })
 
-
 root.render(
-  <React.StrictMode>
     <ApolloProvider client={client}>
       <App/>
     </ApolloProvider>
-  </React.StrictMode>
 );
 
