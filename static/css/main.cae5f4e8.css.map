@@ -1,1 +1,1 @@
-{"version":3,"file":"static/css/main.cae5f4e8.css","mappings":"AAAA,gBAEI,aAAc,CADd,YAEJ,CACA,MACI,cACJ","sources":["App.css"],"sourcesContent":[".spinner-border {\r\n    width: 15vmin;\r\n    height: 15vmin;\r\n}\r\n.card {\r\n    cursor: pointer;\r\n}"],"names":[],"sourceRoot":""}
+{"version":3,"file":"static/css/main.cae5f4e8.css","mappings":"AAAA,gBAEI,aAAc,CADd,YAEJ,CACA,MACI,cACJ","sources":["styles/App.css"],"sourcesContent":[".spinner-border {\r\n    width: 15vmin;\r\n    height: 15vmin;\r\n}\r\n.card {\r\n    cursor: pointer;\r\n}"],"names":[],"sourceRoot":""}
