@@ -1,10 +1,10 @@
-import './App.css';
+import '../styles/App.css';
 import Pagination from "./Pagination";
 import { ApolloConsumer} from "@apollo/client"
 import { useDeferredValue, useEffect, useReducer, useState } from "react";
-import getOAuth from './auth';
+import getOAuth from '../logic/auth';
 import List from './List';
-import { filter, login, logout, onlyLiked } from './actions';
+import { filter, login, logout, onlyLiked } from '../logic/actions';
 
 export default function App() {
   const [state, dispatch] = useReducer(appReducer, initialState)

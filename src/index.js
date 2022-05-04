@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import {ApolloProvider, ApolloClient, InMemoryCache, ApolloConsumer} from "@apollo/client"
-import { STATE } from './config';
-import { sendMessage } from './utils';
+import App from './View/App';
+import {ApolloProvider, ApolloClient, InMemoryCache} from "@apollo/client"
+import { sendMessage } from './logic/utils';
 
 sendMessage()
 

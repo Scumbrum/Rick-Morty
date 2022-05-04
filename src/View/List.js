@@ -1,10 +1,10 @@
 import { useEffect, useReducer, useState } from "react"
-import { getAllCharacters } from "./queries/characters"
+import { getAllCharacters } from "../queries/characters"
 import { useMemo } from "react"
 import Profile from "./Profile"
-import { FIELDS, useData } from "./hoooks"
-import { NO_IMAGE } from "./config"
-import { filter, loaded, select } from "./actions"
+import { FIELDS, useData } from "../logic/hoooks"
+import { NO_IMAGE } from "../logic/config"
+import { filter, loaded, select } from "../logic/actions"
 import LikeControlls from "./LikeControlls"
 
 export default function List({param, client, setter, user, onlyLiked}) {

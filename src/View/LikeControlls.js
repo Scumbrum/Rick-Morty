@@ -1,4 +1,4 @@
-import { DISLIKE, LIKE } from "./config";
+import { DISLIKE, LIKE } from "../logic/config";
 
 export default function LikeControlls({likeHandler, dislikeHandler, status, character}) {
 

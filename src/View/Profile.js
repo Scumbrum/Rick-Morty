@@ -1,7 +1,7 @@
 import {useQuery} from "@apollo/client"
 import { useEffect, useState } from "react"
-import { FIELDS } from "./hoooks"
-import { GET_CHARACTER } from "./queries/characters"
+import { FIELDS } from "../logic/hoooks"
+import { GET_CHARACTER } from "../queries/characters"
 export default function Profile({id, setter}) {
     const {loading, data} = useQuery(GET_CHARACTER, {variables: {
         id: id
