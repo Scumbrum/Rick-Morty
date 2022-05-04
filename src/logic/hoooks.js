@@ -44,7 +44,7 @@ function setMark(data, character, status) {
 function getData(user) {
     let data = localStorage.getItem(user)
     if(!data) {
-        data = ""
+        data = "{}"
         localStorage.setItem(user, data)
     }
     data = JSON.parse(data)
